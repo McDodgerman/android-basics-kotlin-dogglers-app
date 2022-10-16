@@ -23,7 +23,10 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.dogglers"
+        configurations.all {
+            resolutionStrategy { force 'android.core:core-ktx:1.6.0' }
+        }
+        applicationId "com.stargrazer.dogglers"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1

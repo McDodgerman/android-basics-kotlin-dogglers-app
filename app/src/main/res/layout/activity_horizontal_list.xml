@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HorizontalListActivity">
+    tools:context="com.stargrazer.dogglers.HorizontalListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/horizontal_recycler_view"

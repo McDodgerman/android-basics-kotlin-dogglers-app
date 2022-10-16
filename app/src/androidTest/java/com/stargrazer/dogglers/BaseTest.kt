@@ -13,7 +13,7 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-package com.stargrazer.dogglers
+package com.example.dogglers
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -33,9 +33,8 @@ import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.dogglers.R
-import com.stargrazer.dogglers.BaseTest.DrawableMatcher.withDrawable
-import com.stargrazer.dogglers.data.DataSource
+import com.example.dogglers.BaseTest.DrawableMatcher.withDrawable
+import com.example.dogglers.data.DataSource
 import org.hamcrest.CoreMatchers
 import org.hamcrest.Description
 import org.hamcrest.Matcher
@@ -68,9 +67,8 @@ open class BaseTest {
      * Check the content of the first card
      */
     fun checkFirstPosition() {
-        hasListItemContent("Tzeitel", "Age: 7", "Hobbies: sunbathing",
-            R.drawable.tzeitel
-        )
+        hasListItemContent("Tzeitel", "7", "sunbathing",
+            R.drawable.tzeitel)
     }
 
     /**

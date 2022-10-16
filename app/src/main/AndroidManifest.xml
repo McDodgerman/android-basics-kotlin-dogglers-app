@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stargrazer.dogglers">
+    package="com.example.dogglers">
 
     <application
         android:allowBackup="true"
@@ -24,22 +24,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dogglers">
-        <activity android:name="com.stargrazer.dogglers.VerticalListActivity">
+        <activity android:name=".VerticalListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.stargrazer.dogglers.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name="com.stargrazer.dogglers.HorizontalListActivity">
+        <activity android:name=".HorizontalListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.stargrazer.dogglers.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name="com.stargrazer.dogglers.GridListActivity">
+        <activity android:name=".GridListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.stargrazer.dogglers.MainActivity" />
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name="com.stargrazer.dogglers.MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
